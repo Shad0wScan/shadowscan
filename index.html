@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowScan - Advanced Security Tools</title>
+  <meta name="description" content="Protecting your digital assets with cutting-edge cybersecurity solutions">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+      /* Custom font families */
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+
+    /* Gradient text effect */
+    .bg-clip-text { -webkit-background-clip: text; background-clip: text; }
+    .text-transparent { color: transparent; }
+
+    /* Custom hover effects */
+    .hover\:shadow-lg:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    .hover\:shadow-emerald-500\/10:hover { box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.1); }
+
+    /* Placeholder for missing SVG icons */
+    .icon-placeholder { display: inline-block; width: 2rem; height: 2rem; background-color: #34d399; border-radius: 50%; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+
+<!-- Hero Section with Video Background -->
+<section class="relative h-screen w-full overflow-hidden">
+    <!-- Video Background -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline>
+        <source src="./cyber.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay (Optional - for better text readability) -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-500">
+                Securing the Digital Frontier
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                At ShadowScan, we build advanced security tools that protect your business from evolving cyber threats.
+            </p>
+            <button class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-medium px-8 py-4 text-lg rounded-lg">
+                Our Solutions
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ml-2 h-5 w-5">
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Navigation Tabs -->
+<section class="bg-gray-900 py-6">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 bg-gray-800 rounded-lg">
+      <button class="tab-button py-3 text-center text-white hover:bg-gray-700" onclick="showTab('overview')">Overview</button>
+      <button class="tab-button py-3 text-center text-white hover:bg-gray-700" onclick="showTab('mission')">Our Mission</button>
+      <button class="tab-button py-3 text-center text-white hover:bg-gray-700" onclick="showTab('team')">Our Team</button>
+      <button class="tab-button py-3 text-center text-white hover:bg-gray-700" onclick="showTab('approach')">Our Approach</button>
+    </div>
+  </div>
+</section>
+
+<!-- Content Sections -->
+<section class="py-16 bg-gradient-to-b from-gray-900 to-black">
+  <div class="container mx-auto px-4">
+
+    <!-- Overview Tab -->
+    <div class="tab-content" id="overview">
+      <div class="container mx-auto px-4"><div class="grid md:grid-cols-2 gap-12 items-center"><div><h2 class="text-3xl font-bold mb-6 text-emerald-400 font-['Montserrat',sans-serif]">About ShadowScan</h2><p class="text-gray-300 mb-4">Founded in 2024, ShadowScan has rapidly emerged as a leader in cybersecurity tools and solutions. We combine cutting-edge technology with user-friendly interfaces to create security products that protect businesses of all sizes.</p><p class="text-gray-300 mb-6">Our suite of tools includes threat detection systems, network monitoring solutions, and advanced encryption technologies that work together to create a comprehensive security ecosystem.</p><div class="grid grid-cols-2 gap-4"><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-8 w-8 text-emerald-400 mr-3"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg><span class="font-['Poppins',sans-serif]">Threat Protection</span></div><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-8 w-8 text-emerald-400 mr-3"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span class="font-['Poppins',sans-serif]">Data Encryption</span></div><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code h-8 w-8 text-emerald-400 mr-3"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg><span class="font-['Poppins',sans-serif]">Secure Development</span></div><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-8 w-8 text-emerald-400 mr-3"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg><span class="font-['Poppins',sans-serif]">Cloud Security</span></div></div></div><div class="relative"><div class="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-lg blur-xl"></div><div class="relative bg-gray-800 p-6 rounded-lg"><div class="grid grid-cols-2 gap-4"><div class="text-center p-4"><div class="text-4xl font-bold text-emerald-400 mb-2 font-['Montserrat',sans-serif]">500+</div><div class="text-gray-400 font-['Poppins',sans-serif]">Clients Protected</div></div><div class="text-center p-4"><div class="text-4xl font-bold text-emerald-400 mb-2 font-['Montserrat',sans-serif]">15M+</div><div class="text-gray-400 font-['Poppins',sans-serif]">Threats Blocked</div></div><div class="text-center p-4"><div class="text-4xl font-bold text-emerald-400 mb-2 font-['Montserrat',sans-serif]">99.9%</div><div class="text-gray-400 font-['Poppins',sans-serif]">Uptime</div></div><div class="text-center p-4"><div class="text-4xl font-bold text-emerald-400 mb-2 font-['Montserrat',sans-serif]">24/7</div><div class="text-gray-400 font-['Poppins',sans-serif]">Support</div></div></div></div></div></div></div>
+
+      </div>
+
+
+    <!-- Mission Tab -->
+    <div class="tab-content hidden" id="mission">
+      <div class="container mx-auto px-4"><div class="max-w-4xl mx-auto"><h2 class="text-3xl font-bold mb-6 text-center text-emerald-400 font-['Montserrat',sans-serif]">Our Mission</h2><div class="bg-gray-800/50 p-8 rounded-lg mb-8"><p class="text-xl text-center text-gray-300 italic mb-4 font-['Poppins',sans-serif]">"To empower organizations with accessible, powerful security tools that protect their digital assets and enable innovation without compromise."</p></div><div class="space-y-6 text-gray-300 font-['Poppins',sans-serif]"><p>At ShadowScan, we believe that robust cybersecurity should be accessible to all organizations, regardless of their size or technical expertise. Our mission drives everything we do, from product development to customer support.</p><p>We're committed to staying ahead of emerging threats through continuous research and development. Our team of security experts constantly monitors the threat landscape to ensure our tools provide protection against the latest attack vectors.</p><p>Beyond just providing tools, we aim to educate and empower our clients. We believe that security is a shared responsibility, and we work closely with our clients to build a culture of security awareness within their organizations.</p></div></div></div>
+    </div>
+
+    <!-- Team Tab -->
+    <div class="tab-content hidden" id="team">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center text-emerald-400 font-['Montserrat',sans-serif]">
+            Meet Our Leadership Team
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800/50 border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300" data-v0-t="card">
+                <div class="relative w-full aspect-[3/4] overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+                    <img alt="Srinivasan Seetharaman" class="w-full h-full object-cover object-center" src="./srinivasan.png?height=400&amp;width=400">
+                </div>
+                <div class="p-6 pt-4">
+                    <h3 class="text-xl font-bold text-white font-['Montserrat',sans-serif]">Srinivasan Seetharaman</h3>
+                    <p class="text-emerald-400 mb-2 font-['Poppins',sans-serif]">Chief Executive Officer</p>
+                    <p class="text-gray-400 text-sm font-['Poppins',sans-serif]">
+                        our CEO is the driving force behind our mission to provide world-class cybersecurity solutions. With a deep passion for innovation and a commitment to protecting businesses from the growing threat of cyberattacks, our CEO leads the company with a focus on growth, strategy, and customer-centric solutions. By blending industry expertise with visionary leadership, the CEO ensures that ShadowScan continues to set the standard for excellence in the cybersecurity landscape.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Card 3 -->
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800/50 border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300" data-v0-t="card">
+                <div class="relative w-full aspect-[3/4] overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+                    <img alt="Sriram S" class="w-full h-full object-cover object-center" src="./srilaki.jpg?height=400&amp;width=400">
+                </div>
+                <div class="p-6 pt-4">
+                    <h3 class="text-xl font-bold text-white font-['Montserrat',sans-serif]">Sriram S</h3>
+                    <p class="text-emerald-400 mb-2 font-['Poppins',sans-serif]">Co-Founder</p>
+                    <p class="text-gray-400 text-sm font-['Poppins',sans-serif]">
+                    As a Co-Founder of ShadowScan, Sriram is instrumental in shaping the vision and direction of the company. With a passion for cybersecurity and a commitment to solving real-world security challenges, ShadowScan helps lead the development of our innovative scanning tools.                    </p>
+                </div>
+            </div>
+
+
+          <!-- Card 4 -->
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800/50 border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300" data-v0-t="card">
+                <div class="relative w-full aspect-[3/4] overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+                    <img alt="Lakshmanan S" class="w-full h-full object-cover object-center" src="./ramlaki.jpg?height=400&amp;width=400">
+                </div>
+                <div class="p-6 pt-4">
+                    <h3 class="text-xl font-bold text-white font-['Montserrat',sans-serif]">Lakshmanan S</h3>
+                    <p class="text-emerald-400 mb-2 font-['Poppins',sans-serif]">Chief Technology Officer</p>
+                    <p class="text-gray-400 text-sm font-['Poppins',sans-serif]">
+                        Lakshmanan is responsible for overseeing the technological direction of our cybersecurity tools. With a deep expertise in both cybersecurity and cutting-edge technology, the CTO ensures our products remain on the leading edge of innovation and are capable of handling the most sophisticated cyber threats.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- Card 5 -->
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800/50 border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300" data-v0-t="card">
+                <div class="relative w-full aspect-[3/4] overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+                    <img alt="Satish Kumar P" class="w-full h-full object-cover object-center" src="./Satish.jpg?height=400&amp;width=400">
+                </div>
+                <div class="p-6 pt-4">
+                    <h3 class="text-xl font-bold text-white font-['Montserrat',sans-serif]">Satish Kumar P</h3>
+                    <p class="text-emerald-400 mb-2 font-['Poppins',sans-serif]">Chief Principal Architect</p>
+                    <p class="text-gray-400 text-sm font-['Poppins',sans-serif]">
+                        Satish plays a pivotal role in driving the innovation and development of our advanced cybersecurity tools. With a deep understanding of the ever-evolving cyber threat landscape, our Chief Architect leads a team dedicated to creating cutting-edge scanning tools designed to identify, protect, and mitigate vulnerabilities within your systems.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+          <!-- Card 2 -->
+            <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800/50 border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-emerald-500/10 transition-all duration-300" data-v0-t="card">
+                <div class="relative w-full aspect-[3/4] overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
+                    <img alt="Julian Sofia" class="w-full h-full object-cover object-center" src="./Sofia.png?height=400&amp;width=400">
+                </div>
+                <div class="p-6 pt-4">
+                    <h3 class="text-xl font-bold text-white font-['Montserrat',sans-serif]">Julian Sofia</h3>
+                    <p class="text-emerald-400 mb-2 font-['Poppins',sans-serif]">Hr director</p>
+                    <p class="text-gray-400 text-sm font-['Poppins',sans-serif]">
+                        Julian is the heart of our organizational culture, responsible for attracting, retaining, and nurturing the best talent in the cybersecurity industry. Their focus on building a positive, collaborative work environment ensures that our teams can innovate and deliver world-class solutions to our clients.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <!-- Approach Tab -->
+    <div class="tab-content hidden" id="approach">
+        <div class="container mx-auto px-4"><div class="max-w-4xl mx-auto"><h2 class="text-3xl font-bold mb-8 text-center text-emerald-400 font-['Montserrat',sans-serif]">Our Approach to Cybersecurity</h2><div class="space-y-12"><div class="bg-gray-800/50 p-6 rounded-lg"><h3 class="text-xl font-bold mb-4 text-white font-['Montserrat',sans-serif]">Research-Driven Development</h3><p class="text-gray-300 font-['Poppins',sans-serif]">Our products are built on a foundation of rigorous security research. Our dedicated research team continuously analyzes emerging threats and vulnerabilities to ensure our tools provide comprehensive protection.</p></div><div class="bg-gray-800/50 p-6 rounded-lg"><h3 class="text-xl font-bold mb-4 text-white font-['Montserrat',sans-serif]">User-Centric Design</h3><p class="text-gray-300 font-['Poppins',sans-serif]">We believe that security tools should be powerful yet intuitive. Our product design philosophy focuses on creating interfaces that make advanced security accessible to users of all technical backgrounds.</p></div><div class="bg-gray-800/50 p-6 rounded-lg"><h3 class="text-xl font-bold mb-4 text-white font-['Montserrat',sans-serif]">Integrated Security Ecosystem</h3><p class="text-gray-300 font-['Poppins',sans-serif]">Rather than offering isolated point solutions, we develop tools that work together seamlessly to provide comprehensive protection across your entire digital infrastructure.</p></div><div class="bg-gray-800/50 p-6 rounded-lg"><h3 class="text-xl font-bold mb-4 text-white font-['Montserrat',sans-serif]">Continuous Improvement</h3><p class="text-gray-300 font-['Poppins',sans-serif]">The threat landscape is constantly evolving, and so are our tools. We maintain a rapid development cycle, regularly releasing updates and new features to address emerging security challenges.</p></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-gradient-to-r from-emerald-900/40 to-teal-900/40"><div class="container mx-auto px-4 text-center"><h2 class="text-3xl font-bold mb-6 font-['Montserrat',sans-serif]">Ready to secure your digital assets?</h2><p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-['Poppins',sans-serif]">Discover how our cybersecurity tools can protect your organization from today's most sophisticated threats.</p><div class="flex flex-col sm:flex-row gap-4 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-md font-['Poppins',sans-serif]">Request a Demo</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 border-emerald-500 text-emerald-400 hover:bg-emerald-950 px-8 py-6 text-lg rounded-md font-['Poppins',sans-serif]">View Our Solutions</button></div></div></section>
+
+<script>
+  function showTab(tab) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.getElementById(tab).classList.remove('hidden');
+  }
+  // Show initial tab
+  showTab('overview');
+</script>
+
+</body>
+</html>
